@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+
+      <span id="myText">Some text here</span>.
+      <br/>
+
+      <button id="buttonOne">Red</button>
+      <button id="buttonTwo">Black</button>
+      <button id="buttonThree">New text</button>
+      <button id="buttonFour">Alert</button>
+
+    </body>
+
+    <script>
+
+      $('#buttonOne').click(() => {
+        $('#myText').css({ 'color': 'red' })
+      });
+
+      $('#buttonTwo').click(() => {
+        $('#myText').css({ 'color': 'black' })
+      });
+
+      $('#buttonThree').click(() => {
+        $('#myText').html('New text')
+      });
+
+      $('#buttonFour').click(() => {
+        alert('Hello');
+      });
+
+
+    </script>
+</html>
